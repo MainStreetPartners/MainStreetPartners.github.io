@@ -1,0 +1,8 @@
+jQuery(function ($) {
+  if ($('.mobile_menu_bar').length) {
+    $('.mobile_menu_bar').click(function (e) {
+      e.preventDefault();
+      $('body').toggleClass('noScroll');
+    });
+  }
+});

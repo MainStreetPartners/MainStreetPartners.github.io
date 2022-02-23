@@ -1,0 +1,44 @@
+/*
+Theme Name:  DiviChild
+Theme URI:   http://divi-professional.com/
+Description: DP Child Theme
+Version:     1.0
+Author:      Divi Professional
+Author URI:  http://divi-professional.com/
+Template:    Divi
+Text Domain: ddm
+*/
+
+.et_pb_menu .et_mobile_menu, .et_pb_fullwidth_menu .et_mobile_menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    height: 100vh;
+    padding-top: 60px;
+}
+
+.et_pb_menu_0.et_pb_menu .et_mobile_menu {
+    overflow-y: scroll;
+}
+
+.et_pb_menu_0 .mobile_nav .mobile_menu_bar {
+    transition: all 0.2s;
+}
+
+.et_pb_menu_0 .mobile_nav.opened .mobile_menu_bar:before {
+    color: #002659;
+    content: "\4d";
+}
+
+.mobile_menu_bar {
+    z-index: 99;
+}
+
+body.noScroll {
+    overflow: hidden;
+}
+
+.et_pb_section_video:not(.et_pb_menu):not(.et_pb_fullwidth_menu) {
+    overflow: unset;
+}
